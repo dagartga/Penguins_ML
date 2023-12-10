@@ -8,6 +8,12 @@ st.title('Penguin Species Classifier')
 st.write('This app uses 6 inputs to predict the species of a penguin using a model' 
          ' built on the Palmer Penguins dataset. Use the form below to get started!')
 
+# setup a password to protect the app
+password_guess = st.text_input('Please Enter the Password:')
+if password_guess != st.secrets['password']:
+    st.stop()
+
+
 rf_pickle = open('random_forest_penguin.pickle', 'rb')
 map_pickle = open('output_penguin.pickle', 'rb')
 
