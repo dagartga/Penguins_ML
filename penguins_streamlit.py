@@ -81,7 +81,7 @@ st.image('rf_feature_importances.png')
 
 
 # load the data
-penguin_df = pd.read_csv('../penguins_app/penguins.csv')
+penguin_df = pd.read_csv('penguins.csv')
 penguin_df = penguin_df.dropna()
 
 # display the distribution of the species for bill length

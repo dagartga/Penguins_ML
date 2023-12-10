@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pickle
 
-penguin_df = pd.read_csv('../penguins_app/penguins.csv')
+penguin_df = pd.read_csv('penguins.csv')
 
 penguin_df = penguin_df.dropna()
 
